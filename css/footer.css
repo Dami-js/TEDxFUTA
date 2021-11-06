@@ -1,0 +1,41 @@
+footer{
+    padding: 10px 10px;
+    background-color: #000000;
+}
+
+.footer-list p{
+    color: #fff;
+}
+
+.footer-list ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divider{
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.foot p{
+    color: #fff;
+    text-align: center;
+}
+
+.social-icons{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+margin-right: 30px;
+}
+
+.social-icons img{
+    margin-right: 10px;
+    margin-bottom: 15px;
+}

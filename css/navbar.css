@@ -1,0 +1,72 @@
+.nav-brand img{
+    width: 180px;
+    line-height: 75px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 0 70px;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    background: #E62B1E;
+    transition:.5s;
+}
+
+.checkbtn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media screen and(min-width: 855px){
+    nav{
+        padding: 0 10px;
+    }
+    .nav-brand img{
+        width: 60px;
+    }
+
+    .checkbtn{
+        display: flex;
+    }
+
+    #check{
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+    }
+}
+
