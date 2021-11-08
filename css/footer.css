@@ -1,6 +1,6 @@
 footer{
     padding: 10px 10px;
-    background-color: #000000;
+    background-color: #000;
 }
 
 .footer-list p{
@@ -24,6 +24,7 @@ footer{
 }
 
 .foot p{
+    margin-top: 1rem;
     color: #fff;
     text-align: center;
 }
@@ -38,4 +39,27 @@ margin-right: 30px;
 .social-icons img{
     margin-right: 10px;
     margin-bottom: 15px;
+}
+
+
+.logo{
+    display: none;
+}
+
+@media (min-width: 1024px){
+    .footer-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .social-icons img{
+        width: 10px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    .logo{
+        display: block;
+    }
 }

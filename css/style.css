@@ -1,10 +1,8 @@
+@import "./base.css";
+
 @import "./navbar.css";
 @import "./footer.css";
 
-.container{
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
  .header{
     background-image: url(/Images/unsplash_DL-yyYDDNX4.jpg);
@@ -13,18 +11,19 @@
     background-position: center center;
     height: 530px;
     box-shadow:inset 0 0 0 50vw rgba(0, 0, 0, 0.8);
-    position: relative;
+    /* position: relative; */
 }
 
 .header-content{
-    position: absolute;
+    /* position: absolute; */
     padding: 0 30px;
-    margin-top: 7rem;
+    margin-left: 2rem;
+    margin-top: 8rem;
 }
 
-.header-content.block{
-    display: flex;
-    flex-direction: column;
+
+.aside{
+    margin-top: 4rem;
 }
 
 .header-content h4{
@@ -37,7 +36,6 @@
     color: #fff;
     font-size: 2.5rem;
     text-transform: uppercase;
-    margin-top: -1.3rem;
 }
 
 .quest{
@@ -74,12 +72,13 @@
     font-weight: bolder;
     color: #000000;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .red-line{
     width: 20%;
     border-top: 1px solid #E62B1E;
-    margin: -10px auto;
+    margin: 10px auto;
 
 }
 
@@ -151,7 +150,7 @@
 }
 
 .grey-text{
-    margin-top: -10px;
+    margin-top: 10px;
     font-size: 1.1rem;
 }
 
@@ -174,10 +173,14 @@
     text-align: center;
 }
 
-.jude{
+.jude-border{
     margin-bottom: -4.5rem;
     position: relative;
 }
+
+/*.jude{
+    display: none;
+ } */
 
 .card-text{
     background-color: #E62B1E;
@@ -216,7 +219,7 @@
 
 .grid-post{
     background-color: #fff;
-    height: 250px;
+    /* height: 250px; */
     padding-top: 1rem;
     padding-left: 20px;
     padding-right: 20px;
@@ -241,5 +244,192 @@
     margin-right: 40px;
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+
+@media (min-width: 1024px){
+
+    .header-content{
+        /* position: absolute; */
+        /* padding: 0 70px; */
+        margin-top: 4rem;
+    }
+
+    .header-content h4{
+        font-size: 4.5rem;
+    }
+
+    .header-content h3{
+        font-size: 110px;
+        margin-top: 10px;
+    }
+
+    .aside{
+        margin-top: 60px;
+    }
+
+    .btn {
+        padding: 18px 18px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .btn-cta{
+        background-color: #E62B1E;
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+
+    .heading h3{
+        font-size: 2.2rem;
+        font-weight: bolder;
+        color: #000000;
+        text-align: center;
+    }
+
+    .red-line{
+        width: 10%;
+        border-top: 1px solid #E62B1E;
+        margin: 10px auto;
+    
+    }
+
+    .sponsors-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .partake{
+        background-image: url(/Images/left.png),
+        url(/Images/right.png);
+        background-repeat: no-repeat no-repeat;
+        background-position: left 0 top 0, right 0 top 0;
+        background-size: 13%;
+    }
+
+
+    .partake-grid-container{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    .grid-partake{
+        border: none;
+    }
+
+    .speakers-grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .speakers{
+        background-image: url(/Images/left.png),
+        url(/Images/right.png);
+        background-repeat: no-repeat no-repeat;
+        background-position: left 0 top 0, right 0 top 0;
+        background-size: 13%;
+    }
+
+    .center{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .connected-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .text-block{
+        font-size: 1.5rem;
+        text-align: justify;
+        margin-top: 100px;
+    }
+
+    .centers{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
+    .image-align{
+        margin-top: 10px;
+    }
+
+    .contain{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .founder-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .testimonials-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .founder-container{
+        position: relative;
+    }
+
+    .card-text{
+        width: 50%;
+        margin-left: 440px;
+        padding: 1rem 20px 20px 20px;
+    }
+
+    .jude{
+        position: absolute;
+        left: 100px;
+        top: 0px;
+    }
+
+    .jude img{
+        height: 450px;
+    }
+
+    .sect1{
+        padding-top:0;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .overlay{
+        width: 550px;
+        height: 450px;
+        border: 3px solid rgba(230, 43, 30, 0.3);
+        position: absolute;
+        top: -20px;
+        left: 60px;
+        border-radius: 10px;
+        z-index: -1;
+    }
+
+    .sect h3{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .text-block{
+        display: block;
+        text-align: center;
+        padding: 0 5px;
+        font-size: 1.1rem;
+    }
+
 }
 
