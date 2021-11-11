@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,67 +8,105 @@
     <link rel="stylesheet" href="/css/pricing.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="nav-brand"></div>
+            <div class="nav-brand">
+                <img src="/Images/dark-logo.png" alt="">
+            </div>
             <div class="nav-menu">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Speakers</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="#" class="active">Pricing</a></li>
+                    <li><a href="/pages/speakers.html">Speakers</a></li>
+                    <li><a href="/pages/blog.html">Blog</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <section class="pricing">
-            <div class="pricing-container">
-                <h3>Pricing Table</h3>
-                <div class="pricing-grid">
-                    <div class="grid-price1">
-                        <h3>2k</h3>
-                        <div>
-                            <p>Stay tuned</p>
-                            <p>Stay tuned</p>
-                            <p>Stay tuned</p>
+            <div class="container">
+                <div class="pricing-container">
+                    <h3>Pricing Table</h3>
+                    <div class="pricing-grid">
+                        <div class="grid-price1">
+                            <div class="price-card-text">
+                                <h3>2k</h3>
+                                <p>Basic</p>
+                            </div>
+                            <div class="price-card">
+                                <div class="description">
+                                    <p>Stay tuned!Stay tuned!</p>
+                                    <p>Stay tuned!Stay tuned!</p>
+                                    <p>Stay tuned!Stay tuned!</p>
+                                </div>
+                                <a href="#" class="btn btn-cta">Get Ticket</a>
+                            </div>
                         </div>
-                        <button>Get Ticket</button>
-                    </div>
-                    <div class="grid-price1">
-                        <h3>5k</h3>
-                        <div>
-                            <p>Stay tuned</p>
-                            <p>Stay tuned</p>
-                            <p>Stay tuned</p>
+                        <div class="grid-price1">
+                            <div class="price-card-text">
+                                <h3>5k</h3>
+                                <p>Premium</p>
+                            </div>
+                            <div class="price-card">
+                                <div class="description">
+                                    <p>Stay tuned!Stay tuned!</p>
+                                    <p>Stay tuned!Stay tuned!</p>
+                                    <p>Stay tuned!Stay tuned!</p>
+                                </div>
+                                <a href="#" class="btn btn-cta">Get Ticket</a>
+                            </div>
                         </div>
-                        <button>Get Ticket</button>
-                    </div>
-                    <div class="grid-price1">
-                        <h3>10k</h3>
-                        <div>
-                            <p>Stay tuned</p>
-                            <p>Stay tuned</p>
-                            <p>Stay tuned</p>
+                        <div class="grid-price1">
+                            <div class="price-card-text">
+                                <h3>10k</h3>
+                                <p>Golden</p>
+                            </div>
+                            <div class="price-card">
+                                <div class="description">
+                                    <p>Stay tuned!Stay tuned!</p>
+                                    <p>Stay tuned!Stay tuned!</p>
+                                    <p>Stay tuned!Stay tuned!</p>
+                                </div>
+                                <a href="#" class="btn btn-cta">Get Ticket</a>
+                            </div>
                         </div>
-                        <button>Get Ticket</button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="form">
             <div class="container">
-                <h3>Reserve your Seat</h3>
                 <div class="form-container">
-                    <form>
-                        <label for="fname"></label>
+                <h3>Reserve your Seat</h3>
+                    <form class="form-column">
+                        <div class="flex-column1">
+                            <input type="text" name="fullname" placeholder="Full Name" id="fullname">
+                        </div>
+                        <div class="flex-column2">
+                            <input type="text" name="email" placeholder="Email Address" id="email">
+                        </div>
+                        <div class="flex-column3">
+                            <input type="tel" name="phone" placeholder="Phone Number" id="phone">
+                        </div>
+                        <div class="flex-column4">
+                            <input type="text" name="occupation" placeholder="Occupation" id="occupation">
+                        </div>
+                        <div class="flex-column5">
+                            <input type="number" name="ticket" placeholder="Number of Ticket" id="ticket">
+                        </div>
+                        <div class="flex-column6">
+                            <button class="btn btn-primary" type="submit">Confirm Ticket</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-    
+
 </body>
+
 </html>

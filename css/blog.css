@@ -40,7 +40,7 @@
 }
 
 .related-container{
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
 }
 
 .related-container h3{
@@ -97,6 +97,11 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
+    }
+
+    .related-container{
+        padding: 5px;
+        margin-bottom: 4rem;
     }
 
 }
