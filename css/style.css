@@ -61,6 +61,10 @@
     color: #E62B1E;
 }
 
+.btn-outline:hover{
+    background-color: transparent;
+}
+
 .header-content.aside{
     display: flex;
     align-items: center;
