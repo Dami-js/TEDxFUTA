@@ -49,7 +49,7 @@ a.active,a:hover{
     display: none;
 }
 
-@media screen and(min-width: 855px){
+@media screen and(min-width: 765px){
     nav{
         padding: 0 10px;
     }

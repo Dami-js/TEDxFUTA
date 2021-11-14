@@ -140,6 +140,7 @@
 
 .connect{
     background-color: rgba(230, 43, 30, 0.04);
+    padding-top: 2px;
 }
 
 .speakers-grid{
@@ -172,19 +173,43 @@
     width: 100%;
 }
 
+.centers{
+    margin-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+
 .founder{
     margin-top: 4rem;
     text-align: center;
 }
 
-.jude-border{
+/*.jude-border{
     margin-bottom: -4.5rem;
     position: relative;
-}
+ } */
 
 /*.jude{
     display: none;
  } */
+
+ .img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+ }
+
+
+
+.img img{
+    /* border-radius: 50%; */
+    width: 100%;
+    height: 100%;
+}
+
 
 .card-text{
     background-color: #E62B1E;
@@ -199,13 +224,14 @@
 
 .sect{
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .sect p{
-    margin-top: -5px;
+    margin-top: 5px;
 }
 
-.overlay{
+/*.overlay{
     width: 190px;
     height: 250px;
     border: 1px solid rgba(230, 43, 30, 0.3);
@@ -214,11 +240,13 @@
     left: 60px;
     border-radius: 10px;
     z-index: -1;
-}
+ } */
 
 .testimonials{
     background-color: rgba(230, 43, 30, 0.04);
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
 
 .grid-post{
@@ -392,10 +420,11 @@
     .card-text{
         width: 50%;
         margin-left: 440px;
-        padding: 1rem 20px 20px 20px;
+        padding: 2rem 20px 20px 20px;
+        margin-top: -420px;
     }
 
-    .jude{
+    /*.jude{
         position: absolute;
         left: 100px;
         top: 0px;
@@ -403,7 +432,17 @@
 
     .jude img{
         height: 450px;
-    }
+     } */
+
+    .img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        width: 300px;
+        height: 400px;
+        left: 170px;
+        top: 30px;
+     }
 
     .sect1{
         padding-top:0;
@@ -412,7 +451,11 @@
         padding-left: 2rem;
     }
 
-    .overlay{
+    .sect{
+        margin-bottom: 20px;
+    }
+
+    /*.overlay{
         width: 550px;
         height: 450px;
         border: 3px solid rgba(230, 43, 30, 0.3);
@@ -421,11 +464,12 @@
         left: 60px;
         border-radius: 10px;
         z-index: -1;
-    }
+     } */
 
     .sect h3{
         font-size: 2rem;
         font-weight: bold;
+        margin-bottom: 10px;
     }
 
     .text-block{
