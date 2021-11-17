@@ -13,6 +13,9 @@
 <body>
     <header class="header">
         <nav>
+            <button onclick="toggleNav()" class="nav-toggler">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="nav-brand">
                 <img src="/Images/dark-logo.png" alt="">
             </div>
@@ -25,9 +28,17 @@
                     <li><a href="/pages/blog.html">Blog</a></li>
                 </ul>
             </div>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+           
         </nav>
+        <div class="nav-menu-mobile">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/pricing.html">Pricing</a></li>
+                <li><a href="/pages/speakers.html">Speakers</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+            </ul>
+        </div>
 
         <div class="header-content">
             <div class="block">
@@ -306,6 +317,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const mobileNav = document.querySelector('.nav-menu-mobile');
+        function toggleNav() {
+            mobileNav.classList.toggle('open');
+        }
+    </script>
 </body>
 
 </html>

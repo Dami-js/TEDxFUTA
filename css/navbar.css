@@ -1,72 +1,91 @@
-.nav-brand img{
-    width: 180px;
-    line-height: 75px;
+.nav-brand img {
+  width: 180px;
+  line-height: 75px;
 }
 
-nav{
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 0 1rem;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-toggler {
+  display: block;
+}
+
+.nav-menu-mobile {
+  display: none;
+}
+
+.nav-menu-mobile.open {
+  display: block;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a.active,
+a:hover {
+  background: #e62b1e;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  float: right;
+}
+
+@media screen and(min-width: 765px) {
+  nav {
+    padding: 0 10px;
+  }
+  .nav-brand img {
+    width: 60px;
+  }
+
+  .checkbtn {
     display: flex;
-    flex-direction: row;
-    height: 80px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000;
-    padding: 0 70px;
-}
+  }
 
+  #check {
+    display: block;
+  }
 
-nav ul{
-    display: flex;
-    flex-direction: row;
-}
-
-nav ul li{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 10px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    padding: 7px 13px;
-    border-radius: 3px;
-}
-
-a.active,a:hover{
-    background: #E62B1E;
-    transition:.5s;
-}
-
-.checkbtn{
-    color: #fff;
-    font-size: 25px;
-    cursor: pointer;
-    float: right;
+  nav ul {
     display: none;
+  }
 }
-#check{
+
+@media (min-width: 1024px) {
+  .nav-menu {
+    display: block;
+  }
+  .nav-toggler {
     display: none;
+  }
 }
-
-@media screen and(min-width: 765px){
-    nav{
-        padding: 0 10px;
-    }
-    .nav-brand img{
-        width: 60px;
-    }
-
-    .checkbtn{
-        display: flex;
-    }
-
-    #check{
-        display: block;
-    }
-
-    nav ul{
-        display: none;
-    }
-}
-
